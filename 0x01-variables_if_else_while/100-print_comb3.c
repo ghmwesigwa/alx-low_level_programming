@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *main - print 01 to 89 with no duplicate digits or combos: no 11, no 10 (01)
- *
- *Return: Always 0 (Success)
- */
+*main - print 01 to 89 with no duplicate digits or combos: no 11, no 10 (01)
+*
+*Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int n = '0';
