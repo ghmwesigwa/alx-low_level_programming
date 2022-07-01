@@ -1,20 +1,19 @@
-
 #include <stdio.h>
 
 /**
- * main - prints lower and upper case alphabets
+ * main - Entry point
  *
  * Return: 0 for success
  */
 int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
+	char n = 'a';
+	char m = 'A';
 
-	for ( ; lower <= 'z'; n++)
-		putchar(lower);
-	for ( ; upper <= 'Z'; m++)
-		putchar(upper);
+	for ( ; n <= 'z'; n++)
+		putchar(n);
+	for ( ; m <= 'Z'; m++)
+		putchar(m);
 	putchar(10);
 	return (0);
 }
