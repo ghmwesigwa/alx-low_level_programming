@@ -6,11 +6,11 @@
 
 int main(void)
 {
-  char alph = 'a';
-  for ( ; alph <= 'z'; alph++)
+char alph = 'a';
+for ( ; alph <= 'z'; alph++)
 {
-    putchar(alph);
+putchar(alph);
 }
-  putchar('\n');
-  return (0);
+putchar('\n');
+return (0);
 }
