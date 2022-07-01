@@ -3,16 +3,16 @@
 #include<stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (success)
- */
- 
- int main(void)
- {
- 	int n, l_digit;
+* main - Entry point
+* Return: Always 0 (success)
+*/
+
+int main(void)
+{
+	int n, l_digit;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	l_digit = n % 10; // last digit of n
+	l_digit = n % 10;
 	if (l_digit % 10 > 5){
 		printf("Last digit of %d is %d and is greater than 5\n", n, l_digit);
 	}
@@ -25,4 +25,4 @@
 	}
 
 	return (0);
- }
+}
