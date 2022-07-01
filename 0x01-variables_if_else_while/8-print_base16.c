@@ -9,14 +9,15 @@ int main(void)
 	char n = '0';
 	char m = 'a';
 
-	for ( ; n <= '9' && m <= 'f'; n++) /*print 0-9*/
+	for ( ; n <= '9'; n++) /*print 0-9*/
 	{
-    putchar(n);
-    for ( ; m <= 'f'; m++) /*print a-f to finish hexbase*/
-    {
-      putchar(m);
-    }
-  }
+		putchar(n);
+	}
+	for ( ; m <= 'f'; m++) /*print a-f to finish hexbase*/
+	{
+		putchar(m);
+	}
+  
 	putchar(10);
 	return (0);
 }
