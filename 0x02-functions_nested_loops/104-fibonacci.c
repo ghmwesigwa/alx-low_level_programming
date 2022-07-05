@@ -24,7 +24,7 @@ int main(void)
 			a_tail = b_tail;
 			b_head = sum_head;
 			b_tail = sum;
-			printf("%lu%lu", b_head, b_tail);
+			printf(" %lu%lu", b_head, b_tail);
 		}
 		else
 		{
