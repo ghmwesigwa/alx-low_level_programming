@@ -9,7 +9,7 @@ int main(void)
 	int a = 1, b = 1, sum = 0;
 	int sum_of_evens = 0;
 
-	do{
+	do {
 		sum = a + b;
 		a = b;
 		b = sum;
