@@ -17,9 +17,7 @@ int main(void)
 		{
 			overflow = (a_tail + b_tail) / 100000000000;
 			sum = (a_tail + b_tail) % 100000000000;
-			
 			sum_head = (a_head + b_head) + overflow;
-			
 			a_head = b_head;
 			a_tail = b_tail;
 			b_head = sum_head;
