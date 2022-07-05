@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
 * main - print sum of even Fionacci sequence up to 4,000,000
+* followed by a new line character
 * Return: 0
 */
 int main(void)
