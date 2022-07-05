@@ -16,7 +16,6 @@ int main(void)
 		if (sum % 2 == 0)
 			sum_of_evens += sum;
 	} while (sum < 4000000);
-	
 	printf("%d\n", sum_of_evens);
 	return (0);
 }
