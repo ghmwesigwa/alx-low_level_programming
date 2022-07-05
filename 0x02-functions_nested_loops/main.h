@@ -1,5 +1,5 @@
-#ifndef ALX_H
-#define ALX_H
+#ifndef ALX_H;
+#define ALX_H;
 
 /**
  * print_"_putchar"
