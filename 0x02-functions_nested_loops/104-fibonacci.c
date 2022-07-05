@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	unsigned long int a_head = 0, a_tail = 1, b_head = 0, b_tail = 2;
-	unsigned long int sum, sum_head;
+	long a_head = 0, a_tail = 1, b_head = 0, b_tail = 2;
+	unsigned long sum, sum_head;
 	int i, overflow;
 
 	printf("%lu, %lu, ", a_tail, b_tail);
