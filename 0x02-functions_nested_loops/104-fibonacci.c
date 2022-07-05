@@ -13,10 +13,10 @@ int main(void)
 	printf("%lu, %lu, ", a_tail, b_tail);
 	for (i = 2; i < 98; i++)
 	{
-		if (a_tail + b_tail > 1000000000000 || b_head > 0 || a_head > 0)
+		if (a_tail + b_tail > 10000000000 || b_head > 0 || a_head > 0)
 		{
-			overflow = (a_tail + b_tail) / 1000000000000;
-			sum = (a_tail + b_tail) % 1000000000000;
+			overflow = (a_tail + b_tail) / 10000000000;
+			sum = (a_tail + b_tail) % 10000000000;
 			
 			sum_head = (a_head + b_head) + overflow;
 			
