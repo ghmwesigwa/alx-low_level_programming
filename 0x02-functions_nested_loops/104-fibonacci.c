@@ -32,6 +32,8 @@ int main(void)
 			a_tail = b_tail, b_tail = sum;
 			printf("%lu", b_tail);
 		}
+		if (i != 97)
+			printf(",");
 	}
 	printf("\n");
 	return (0);
