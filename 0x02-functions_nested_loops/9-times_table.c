@@ -6,7 +6,7 @@ void times_table(void)
 	{
 		for (row = 0; row < 10; row++)
 		{
-      product = (row * column);
+			product = (row * column);
 			if (((row * column) / 10) > 0)
 				_putchar('0' + (product / 10));
 			else if (row > 0)
