@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - print first 98 Fibonacci numbers without using long, malloc,
- * pointers, array/tables, or structures
- * Return: 0
- */
+* main - print first 98 Fibonacci numbers without using long, malloc,
+* pointers, array/tables, or structures
+* Return: 0
+*/
 int main(void)
 {
 	long a_head = 0, a_tail = 1, b_head = 0, b_tail = 2;
