@@ -17,33 +17,33 @@ void print_times_table(int n)
 				product = row * column;
 				if (product > 99)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar((product / 100) + '0');
-					putchar(((product / 10) % 10) + '0');
-					putchar((product % 10) + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar((product / 100) + '0');
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
 				}
-				else if (z > 9)
+				else if (product > 9)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
-					putchar(((product / 10) % 10) + '0');
-					putchar((product % 10) + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
 				}
 				else
 				{
 					if (column != 0)
 					{
-						putchar(',');
-						putchar(' ');
-						putchar(' ');
-						putchar(' ');
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
 					}
-					putchar(product + '0');
+					_putchar(product + '0');
 				}
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
