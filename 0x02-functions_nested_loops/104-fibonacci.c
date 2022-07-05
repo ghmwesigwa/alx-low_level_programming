@@ -24,7 +24,7 @@ int main(void)
 			a_tail = b_tail;
 			b_head = sum_head;
 			b_tail = sum;
-			printf("%lu%lu", b_head, b_tail);
+			printf(", %lu%lu", b_head, b_tail);
 		}
 		else
 		{
@@ -32,8 +32,6 @@ int main(void)
 			a_tail = b_tail, b_tail = sum;
 			printf("%lu", b_tail);
 		}
-		if (i != 95)
-			printf(", ");
 	}
 	printf("\n");
 	return (0);
