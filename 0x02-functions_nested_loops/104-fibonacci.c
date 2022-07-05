@@ -23,6 +23,7 @@ int main(void)
 			b_head = sum_head;
 			b_tail = sum;
 			printf("%lu%lu", b_head, b_tail);
+			fprintf(stderr, "%s", "Error detected!\n");
 		}
 		else
 		{
