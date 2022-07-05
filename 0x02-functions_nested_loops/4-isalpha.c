@@ -1,12 +1,11 @@
-
 #include "main.h"
 
 /**
- * _isalpha - check if character is alphabetic
- * @c : integer value
- * Return: 1 if lower or uppercase, otherwise 0
- *
- */
+* _isalpha - check if character is alphabetic
+* @c : integer value
+* Return: 1 if lower or uppercase, otherwise 0
+*
+*/
 
 int _isalpha(int c)
 {
@@ -14,7 +13,7 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
