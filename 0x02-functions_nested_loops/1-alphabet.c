@@ -1,4 +1,4 @@
-#include "main.c"
+#include "1-main.c"
 
 /**
 * print_alphabet - prints lowercase alphabet
@@ -11,8 +11,8 @@ void print_alphabet(void)
 
 	while (alpha <= 'z')
 	{
-		putchar(alpha);
+		_putchar(alpha);
 		alpha++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
