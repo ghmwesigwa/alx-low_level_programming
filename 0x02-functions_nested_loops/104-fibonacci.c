@@ -23,13 +23,13 @@ int main(void)
 			b_head = sum_head;
 			b_tail = sum;
 			printf("%lu%lu", b_head, b_tail);
-			fprintf(stderr, "%s", "Error detected!\n");
 		}
 		else
 		{
 			sum = a_tail + b_tail;
 			a_tail = b_tail, b_tail = sum;
 			printf("%lu", b_tail);
+			fprintf(stderr, "%s", "Error detected!\n");
 		}
 		if (i != 98)
 			printf(", ");
