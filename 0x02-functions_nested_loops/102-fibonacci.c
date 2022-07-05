@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * main - Print alphabet
@@ -6,8 +6,6 @@
  * Return: <0) for success <1> for failure
  *
  */
-
-#include<stdio.h>
 int main(void)
 {
 	int i;
