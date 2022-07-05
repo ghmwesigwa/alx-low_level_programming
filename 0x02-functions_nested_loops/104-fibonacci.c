@@ -29,11 +29,11 @@ int main(void)
 			sum = a_tail + b_tail;
 			a_tail = b_tail, b_tail = sum;
 			printf("%lu", b_tail);
-			fprintf(stderr, "%s", "Error detected!\n");
 		}
 		if (i != 98)
 			printf(", ");
 	}
+	fprintf(stderr, "%s", "Error detected!\n");
 	printf("\n");
 	return (0);
 }
