@@ -33,7 +33,6 @@ int main(void)
 		if (i != 98)
 			printf(", ");
 	}
-	fprintf(stderr, "%s"); 
 	printf("\n");
 	return (0);
 }
