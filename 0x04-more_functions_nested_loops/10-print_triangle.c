@@ -11,19 +11,19 @@ void print_triangle(int size)
 	int width;
 
 	if (size <= 0)
-		putchar('\n');
+		_putchar('\n');
 
 	for (height = 1; height < size; height++)
 	{
 		for (width = (size - 1); width >= 0; width--){
 		    if (width <= height){
-		        putchar('#');
+		        _putchar('#');
 		    }
 		    else {
-		        putchar(' ');
+		        _putchar(' ');
 		    }
 		}
-		putchar('\n');
+		_putchar('\n');
 
 	}
 }
