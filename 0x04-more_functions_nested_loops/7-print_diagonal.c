@@ -17,13 +17,13 @@ void print_diagonal(int n)
 		for (i = 1; i <= n; i++) /* sketch the slash */
 		{
 			for (j = 1; j < i; j++){
-			 putchar(' ');
+				_putchar(' ');
 			} /* space */
 
-			putchar('\\');
-			putchar('\n');
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 	else
-		putchar('\n');
+		_putchar('\n');
 }
