@@ -16,8 +16,9 @@ void print_diagonal(int n)
 	{
 		for (i = 1; i <= n; i++) /* sketch the slash */
 		{
-			for (j = 1; j < i; j++){
-			 putchar(' ');
+			for (j = 1; j < i; j++)
+			{
+				putchar(' ');
 			} /* space */
 
 			putchar('\\');
