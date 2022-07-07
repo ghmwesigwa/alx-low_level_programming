@@ -15,15 +15,16 @@ void print_triangle(int size)
 
 	for (height = 1; height < size; height++)
 	{
-		for (width = (size - 1); width >= 0; width--){
-		 if (width <= height){
-		 _putchar('#');
-		 }
-		 else {
-		 _putchar(' ');
-		 }
+		for (width = (size - 1); width >= 0; width--)
+		{
+			if (width <= height){
+				_putchar('#');
+			}
+			else
+			{
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
-
 	}
 }
