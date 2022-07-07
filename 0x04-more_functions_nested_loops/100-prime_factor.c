@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - print largest prime factor of 612852475143
@@ -10,7 +10,8 @@ int main(void)
   long int num = 612852475143;
   long int div = 2;
 
-  while (div < num) {
+  while (div < num)
+  {
     if (num % div == 0) 
     {
       num /= div;
