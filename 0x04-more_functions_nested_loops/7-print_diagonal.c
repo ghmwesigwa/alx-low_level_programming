@@ -1,4 +1,4 @@
-#include "stdio.h"
+include "main.h"
 
 /**
 * print_diagonal - prints out a diagonal line
@@ -17,13 +17,13 @@ void print_diagonal(int n)
 		for (i = 1; i <= n; i++) /* sketch the slash */
 		{
 			for (j = 1; j < i; j++){
-				_putchar(' ');
+			 putchar(' ');
 			} /* space */
 
-			_putchar('\\');
-			_putchar('\n');
+			putchar('\\');
+			putchar('\n');
 		}
 	}
 	else
-		_putchar('\n');
+		putchar('\n');
 }
