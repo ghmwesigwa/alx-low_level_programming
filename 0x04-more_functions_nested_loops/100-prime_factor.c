@@ -5,7 +5,7 @@
  * Return: 0 on success
  */
 
-int main(void) 
+int main(void)
 {
   long int num = 612852475143;
   long int div = 2;
