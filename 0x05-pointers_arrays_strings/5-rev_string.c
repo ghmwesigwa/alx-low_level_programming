@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-* strlen - returns the length of a string
+* rev_string - reverses a string
 * @s: string
-* Return: length
+* Return: void
 */
 void rev_string(char *s)
 {
-	int i,j = 0;
+	int i, j = 0;
 	int len;
 	char temp[650];
 
