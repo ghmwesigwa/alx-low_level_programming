@@ -8,12 +8,10 @@
 
 int _atoi(char *s)
 {
-	int i;
-	int h, p;
+	int i = 0;
+	int h = 0;
+	int p = -1;
 	
-	i = 0;
-	h = 0;
-	p = -1;
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
