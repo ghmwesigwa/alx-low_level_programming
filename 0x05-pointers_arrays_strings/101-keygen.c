@@ -8,7 +8,7 @@ int main(void)
 
 	srand(time(NULL));
 	count = 0;
-	total = 2500;
+	total = 2772;
 	while (total > 122)
 	{
 	 myrand = (rand() % 125) + 1;
