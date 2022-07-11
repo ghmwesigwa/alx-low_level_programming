@@ -7,19 +7,27 @@
 
 void puts_half(char *str)
 {
-	int idx;
-	int len = _strlen(str);
+	int idx = 0; len = 0;
 
-	/* find the index to start depending on even/odd amount of strlen */
-	if (len % 2 != 0)
-		idx = (len / 2) + 1;
-	else
-		idx = (len / 2);
-
-	while (idx < len)
+	while (str[idx] != 0)
 	{
-		_putchar(*(str + idx));
+		len++;
 		idx++;
+	}
+
+	if (len  % 2 == 0)
+	{
+		for (idx = len / 2; idx < len ; idx++)
+		{
+			_putchar(str[idx]);
+		}
+	}
+	else
+	{
+		for (idx = (len + 1) / 2; idx < len; idx++)
+		{
+			_putchar(str[idx]);
+		}
 	}
 	_putchar('\n');
 }
