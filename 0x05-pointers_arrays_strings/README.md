@@ -1,4 +1,4 @@
-# Pointers, arrays and strings
+# Pointers, Arrays, and Strings Part 1 of 3
 ### Concepts:
 
     * pointers
