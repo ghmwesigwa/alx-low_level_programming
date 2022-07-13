@@ -6,7 +6,8 @@
  * @src: source string
  *Return: destination string concatenated
  */
-char * _strcat(char * dest, char * src) {
+char * _strcat(char * dest, char * src)
+{
   int i, j = 0;
 
   for (i = 0; dest[i] != '\0';)
