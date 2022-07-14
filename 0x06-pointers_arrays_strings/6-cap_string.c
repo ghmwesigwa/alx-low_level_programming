@@ -13,7 +13,7 @@ char *cap_string(char *s)
 		s[0] -= 32;
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		/* if lowercase and prior char is separator, capitalize*/
+		/* if lowercase and prior char is separator, capitalize */
 		if ((s[i] >= 97 && s[i] <= 122)
 		 && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
 			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
