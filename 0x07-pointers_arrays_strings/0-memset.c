@@ -5,7 +5,7 @@
  * @b: char var
  * @n: int var
  * Return: char return
- **/
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 	if (n > 0)
