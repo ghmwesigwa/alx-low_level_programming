@@ -1,23 +1,22 @@
-#include"main.h"
-
+include "main.h"
 /**
-*_memset-mainfunction
-*@s:charpointervar
-*@b:charvar
-*@n:intvar
-*Return:char
-*/
-char*_memset(char*s,charb,unsignedintn)
+ * _memset - main function
+ * @s: char pointer var
+ * @b: char var
+ * @n: int var
+ * Return: char
+ */
+char * _memset(char * s, char b, unsigned int n)
 {
-if(n>0)
-{
-unsignedinti=0;
-while(i<n)
-{
-s[i]=b;
-i++;
-}
+  if (n > 0)
+  {
+    unsigned int i = 0;
+    while (i < n)
+    {
+      s[i] = b;
+      i++;
+    }
 
-}
-return(s);
+  }
+  return (s);
 }
