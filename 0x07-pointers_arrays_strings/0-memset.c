@@ -6,17 +6,14 @@ include "main.h"
  * @n: int var
  * Return: char
  */
-char * _memset(char * s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-  if (n > 0)
-  {
-    unsigned int i = 0;
-    while (i < n)
-    {
-      s[i] = b;
-      i++;
-    }
+	unsigned int i = 0;
 
-  }
-  return (s);
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
+	return (s);
 }
