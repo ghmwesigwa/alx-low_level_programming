@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
 * is_prime - calls itself until find if a number is prime
