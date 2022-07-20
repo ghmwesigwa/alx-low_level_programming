@@ -1,8 +1,8 @@
 #include "stdio.h"
 
 /**
-* find_root - find square root of n, starting from the smallest possible, 0
-* @b: int
+* _sqrt - find square root of n, starting from the smallest possible, 0
+* @a: int
 * @b: int
 * Return: natural square root, or -1 if not natural root
 */
