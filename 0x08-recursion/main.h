@@ -12,5 +12,6 @@ int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int is_palindrome(char *s);
 int _strlen(char *s);
+int palindrome(char str[], int st, int end);
 
 #endif /* MAIN_H */
