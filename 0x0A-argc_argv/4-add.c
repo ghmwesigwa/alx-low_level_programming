@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - adds positive numbers
- * @argc: argument count
- * @argv: argument vector for values
- * Return: always 0
- */
+* main - print sum if all arguments given are numbers
+* @argc: argument counter
+* @argv: arguments
+* Return: always 0
+*/
 
 int main(int argc, char *argv[])
 {
