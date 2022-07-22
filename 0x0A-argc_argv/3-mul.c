@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - prints product of two numbers
- * @argc: number of arguments
- * @argv: array of pointers to string arguments
- *
- * Return: always 0 for success
- */
+* main - prints product of two numbers
+* @argc: number of arguments
+* @argv: array of pointers to string arguments
+*
+* Return: always 0 for success
+*/
 
 int main(int argc, char *argv[])
 {
