@@ -1,5 +1,24 @@
 #include <main.h>
 
+
+/**
+ * is_num - iterate through each argv to test if it's a number
+ * @argvv: a argv
+ * Return: true only if entire string is a number, false if not
+ */
+
+bool is_num(char *argvv)
+{
+	int j = 0;
+
+	for (j = 0; argvv[j]; j++)
+	{
+		if (!(argvv[j] >= '0' && argvv[j] <= '9'))
+			return (0);
+	}
+	return (1);
+}
+
 /**
  * main - print sum if all arguments given are numbers
  * @argc: argument counter
@@ -34,21 +53,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 
 	return (0);
-}
-
-/**
- * _isdigit - check if character is digit [0-9]
- * @c : integer value
- * Return: 1 if c is digit [0-9] 0 otherwise
- *
- */
-
-int _isdigit(int c)
-{
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	else
-		return (0);
 }
