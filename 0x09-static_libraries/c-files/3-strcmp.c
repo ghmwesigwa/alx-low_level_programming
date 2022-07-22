@@ -6,4 +6,3 @@
  * Return: difference of first characters that are of diff value
  */
 int _strcmp(char *s1, char *s2);
-{
