@@ -6,7 +6,6 @@
  * @argvv: a argv
  * Return: true only if entire string is a number, false if not
  */
-
 bool is_num(char *argvv)
 {
 	int j = 0;
@@ -41,7 +40,7 @@ int main(int argc, char *argv[])
 	/* check all arguments to add numbers */
 	while (i < argc)
 	{
-		if (_isdigit(argv[i]))
+		if (is_num(argv[i]))
 			sum += atoi(argv[i]);
 		else
 		{
