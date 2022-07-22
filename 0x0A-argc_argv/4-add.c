@@ -11,8 +11,9 @@ int main(int argc, char *argv[])
 	int i, j, sum;
 
 	sum = 0;
+	i = 0;
 
-	for (i = 1; i < argc ; i++)
+	while (i < argc)
 	{
 		for (j = 0; argv[i][j] != '\0' ; j++)
 		{
@@ -23,6 +24,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		sum = sum + atoi(argv[i]);
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
