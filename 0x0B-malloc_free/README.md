@@ -1,4 +1,12 @@
-## Low level programming with C
-                                                                                                  
-### Authors
-George H. KYAMBADDE [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/hk14_h)
+# MALLOC, FREE
+
+### Concepts:
+* What is the difference between automatic and dynamic allocation
+* What is malloc and free and how to use them
+* Why and when use malloc
+* How to use valgrind to check for memory leak
+
+
+
+## Authors
+* George KYAMBADDE
