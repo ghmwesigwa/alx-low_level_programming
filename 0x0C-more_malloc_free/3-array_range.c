@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * array_range - create array of integers
  * @min: start range from
