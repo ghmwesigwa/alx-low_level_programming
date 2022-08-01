@@ -19,9 +19,7 @@ int len(char *s)
 	return (i);
 }
 /**
-* strcpy - copies the string pointed to by src,
-* including the terminating null byte (\0),
-* to the buffer pointed to by dest
+* strcpy - copies the string pointed to by src
 * @dest: char pointer
 * @src: char pointer
 * Return: char
