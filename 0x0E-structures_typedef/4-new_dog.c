@@ -26,6 +26,7 @@ int len(char *s)
 * @src: char pointer
 * Return: char
 */
+char *strcpy(char *dest, char *src);
 char *strcpy(char *dest, char *src)
 {
 	int i = 0;
