@@ -47,38 +47,43 @@ char *strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	char *copy_of_name, *copy_of_owner;
-	int len_of_name, len_of_owner;
+	char *copy_of_name;
+	char *copy_of_owner;
 
-	if (name == NULL || owner == NULL)
-		return (NULL);
-
-	len_of_name = len(name);
-	len_of_owner = len(owner);
-
-	d = malloc(sizeof(dog_t));
+	d = malloc(sizeof(dog_t)); /* validate if d initiated correctly */
 	if (d == NULL)
 		return (NULL);
-	copy_of_name = malloc(sizeof(char *) * (len_of_name + 1));
-	if (copy_of_name == NULL)
-	{
-		free(d);
-		free(copy_of_name);
-		return (NULL);
-	}
-	copy_of_name = strcpy(copy_of_name, name);
-	copy_of_owner = malloc(sizeof(char *) * (len_of_owner + 1));
-	if (copy_of_owner == NULL)
-	{
-		free(d);
-		free(copy_of_owner);
-		free(copy_of_name);
-		return (NULL);
-	}
-	copy_of_owner = strcpy(copy_of_owner, owner);
-	d->name = copy_of_name;
+
 	d->age = age;
-	d->owner = copy_of_owner;
-	
+
+	/* make copies of struct members and validate, else free on error */
+	/* set values of struct members to copies of arguments or set to NULL */
+	if (name != NULL)
+	{
+		copy_of_name = malloc(len(name) + 1);
+		if (copy_of_name == NULL)
+		{
+			free(d);
+			return (NULL);
+		}
+		d->name = strcpy(copy_of_name, name);
+	}
+	else
+		d->name = NULL;
+
+	if (owner != NULL)
+	{
+		copy_of_owner = malloc(len(owner) + 1);
+		if (copy_of_owner == NULL)
+		{
+			free(copy_of_name);
+			free(d);
+			return (NULL);
+		}
+		d->owner = strcpy(copy_of_owner, owner);
+	}
+	else
+		d->owner = NULL;
+
 	return (d);
 }
