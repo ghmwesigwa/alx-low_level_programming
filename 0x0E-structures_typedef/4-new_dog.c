@@ -39,10 +39,10 @@ char *strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
-* new_dog - create a dog type
-* @name: char *
-* @age: float
-* @owner: char *
+* new_dog - create new instance of struct dog
+* @name: member
+* @age: member
+* @owner: member
 *
 * Return: instance of struct dog.
 */
@@ -81,5 +81,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d->name = copy_of_name;
 	d->age = age;
 	d->owner = copy_of_owner;
+	
 	return (d);
 }
