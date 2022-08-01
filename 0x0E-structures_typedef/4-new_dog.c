@@ -1,13 +1,12 @@
-
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 int len(char *s);
 /**
- * len -  find length of string
- * @s: char pointer
- * Return: int
+* len - find length of string
+* @s: char pointer
+* Return: int
 */
 int len(char *s)
 {
@@ -20,12 +19,12 @@ int len(char *s)
 	return (i);
 }
 /**
- * strcpy - copies the string pointed to by src,
- * including the terminating null byte (\0),
- * to the buffer pointed to by dest
- * @dest: char pointer
- * @src: char pointer
- * Return: char
+* strcpy - copies the string pointed to by src,
+* including the terminating null byte (\0),
+* to the buffer pointed to by dest
+* @dest: char pointer
+* @src: char pointer
+* Return: char
 */
 char *strcpy(char *dest, char *src)
 {
@@ -39,17 +38,17 @@ char *strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- * new_dog - create a dog type
- * @name: char *
- * @age: float
- * @owner: char *
- *
- * Return: Always dog_t.
- */
+* new_dog - create a dog type
+* @name: char *
+* @age: float
+* @owner: char *
+*
+* Return: Always dog_t.
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	char *cpyn, *cpyo;
+	char *copy_of_name, *copy_of_owner;
 	int lenn, leno;
 
 	if (name == NULL || owner == NULL)
@@ -61,25 +60,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
-	cpyn = malloc(sizeof(char *) * (lenn + 1));
-	if (cpyn == NULL)
+	copy_of_name = malloc(sizeof(char *) * (lenn + 1));
+	if (copy_of_name == NULL)
 	{
 		free(d);
-		free(cpyn);
+		free(copy_of_name);
 		return (NULL);
 	}
-	cpyn = strcpy(cpyn, name);
-	cpyo = malloc(sizeof(char *) * (leno + 1));
-	if (cpyo == NULL)
+	copy_of_name = strcpy(copy_of_name, name);
+	copy_of_owner = malloc(sizeof(char *) * (leno + 1));
+	if (copy_of_owner == NULL)
 	{
 		free(d);
-		free(cpyo);
-		free(cpyn);
+		free(copy_of_owner);
+		free(copy_of_name);
 		return (NULL);
 	}
-	cpyo = strcpy(cpyo, owner);
-	d->name = cpyn;
+	copy_of_owner = strcpy(copy_of_owner, owner);
+	d->name = copy_of_name;
 	d->age = age;
-	d->owner = cpyo;
+	d->owner = copy_of_owner;
 	return (d);
 }
