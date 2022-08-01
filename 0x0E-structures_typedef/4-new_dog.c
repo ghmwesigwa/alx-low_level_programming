@@ -44,7 +44,7 @@ char *strcpy(char *dest, char *src)
 * @age: float
 * @owner: char *
 *
-* Return: Always dog_t.
+* Return: instance of struct dog.
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
