@@ -7,16 +7,18 @@
  * @cmp: pointer to searching/comparing function that we need to execute
  * Return: index where integer's found, -1 if not found or array not present
  */
-
-int int_index(int *array, size_t size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned long int i;
-	if (size <= 0 || array == NULL || cmp == NULL)
+	int i;
+
+	if (array == NULL || cmp == NULL || size <= 0)
 		return (-1);
+
+	/* iterate through array and call searching function */
 	for (i = 0; i < size; i++)
-	{
-		if (cmp(*(array + i)))
+		if (cmp(*(array + i))) /* if returned true */
 			return (i);
-	}
+
 	return (-1);
+
 }
