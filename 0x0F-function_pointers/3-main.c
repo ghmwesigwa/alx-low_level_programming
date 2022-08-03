@@ -1,11 +1,10 @@
 #include "3-calc.h"
-
 /**
- * main - calculator program
- * @argc: number of arguments
- * @argv: array of arguments as strings
- * Return: int result of op
- */
+* main - calculator program
+* @argc: number of arguments
+* @argv: array of arguments as strings
+* Return: int result of op
+*/
 
 int main(int argc, char *argv[])
 {
@@ -27,7 +26,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-  	f = get_op_func(argv[2]);
+	f = get_op_func(argv[2]);
 
 	if (f == NULL || (argv[2][1] != '\0'))
 	{
