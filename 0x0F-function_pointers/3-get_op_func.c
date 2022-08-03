@@ -1,11 +1,11 @@
 #include "3-calc.h"
 #include <stdlib.h>
 /**
- * get_op_func - function to select correct operation function
- * @s: operation given (+, *, -, /, %)
- *
- * Return: pointer to correct operation function (0-4)
- */
+* get_op_func - function to select correct operation function
+* @s: operation given (+, *, -, /, %)
+*
+* Return: pointer to correct operation function (0-4)
+*/
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
