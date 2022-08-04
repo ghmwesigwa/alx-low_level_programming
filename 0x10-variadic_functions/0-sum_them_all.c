@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
 * return sum when given unknown amount
 * of arguments
