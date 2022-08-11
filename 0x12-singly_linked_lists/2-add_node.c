@@ -6,12 +6,13 @@
 * @str: data for new node
 *
 * Return: address of new element, or NULL if failed
+**/
 
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node = malloc(sizeof(list_t));
-if (new_node == NULL)
-{
+	if (new_node == NULL)
+	{
 		printf("Error\n");
 		return (0);
 	}
