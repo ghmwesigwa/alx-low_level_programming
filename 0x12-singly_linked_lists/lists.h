@@ -1,6 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stdarg.h> /* va_list */
+#include <stddef.h> /* typedef */
 #include <stdio.h> /* size_t, printf */
 #include <stdlib.h> /* malloc */
 #include <string.h> /* strdup */
