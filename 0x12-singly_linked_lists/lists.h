@@ -20,7 +20,6 @@ void free_list(list_t *head);
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for alx-Africa project
  */
 typedef struct list_s
 {
