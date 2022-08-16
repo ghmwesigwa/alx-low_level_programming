@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * free_list - free a linked list of int
- * @head: pointer of pointer that contain adress of
- * Return: nothing
- */
+* free_list - free a linked list of int
+* @head: pointer of pointer that contain adress of
+* Return: nothing
+*/
 void free_list(listp_t **head)
 {
 	listp_t *temp;
@@ -23,11 +23,11 @@ void free_list(listp_t **head)
 }
 
 /**
- * print_listint_safe - prints a linked list.
- * @head: head of a list.
- *
- * Return: number of nodes in the list.
- */
+* print_listint_safe - prints a linked list.
+* @head: head of a list.
+*
+* Return: number of nodes in the list.
+*/
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t num_nodes = 0;
