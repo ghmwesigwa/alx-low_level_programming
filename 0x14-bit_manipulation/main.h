@@ -2,6 +2,7 @@
 #define HEADER_H
 
 #include <stdlib.h> /* NULL */
+#include <stdio.h>
 
 /* helper function */
 int _putchar(char c);
