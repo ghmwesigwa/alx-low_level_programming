@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
 * add_dnodeint - adds new nodes to doubly linked list (at he head)
