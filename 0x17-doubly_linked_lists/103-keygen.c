@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 {
 	unsigned int i, b;
 	size_t len, add;
-	char *codex = "A-CHRDw87lNS0E9B2TibgpnMVys"+
-		"5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+	char *codex = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char password[7] = "      ";
 
 	if (argc != 2)
