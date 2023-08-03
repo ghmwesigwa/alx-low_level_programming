@@ -1,0 +1,6 @@
+/* don't push these files */
+
+*~
+*.o
+#*.c
+*0.sh
