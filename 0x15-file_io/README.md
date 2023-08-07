@@ -9,7 +9,7 @@ This repository contains C programs that demonstrate various file input and outp
 - [Requirements](#requirements)
 - [Compilation](#compilation)
 - [Usage](#usage)
-- [License](#license)
+- [Credits](#credts)
 
 ## Description
 
@@ -47,6 +47,7 @@ To compile each program, use the appropriate compiler command. For example:
 
 ```sh
 gcc -Wall -Werror -pedantic -Wextra 0-read_textfile.c -o read_textfile
+```
 Usage
 
 After compilation, you can run each program and provide any required command-line arguments. For example:
