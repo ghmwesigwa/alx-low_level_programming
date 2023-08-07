@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
 
 /**
  * print_error - Prints an error message to stderr.
@@ -85,6 +86,12 @@ int main(int argc, char *argv[])
 	{
 		print_error("Usage: cp file_from file_to", "");
 		exit(97);
+	}
+
+	if (strcmp(argv[1], argv[2]) == 0)
+	{
+		print_error("Can't write to", argv[2]);
+		exit(99);
 	}
 
 	copy_file(argv[1], argv[2]);
