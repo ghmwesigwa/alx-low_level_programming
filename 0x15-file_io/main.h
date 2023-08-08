@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <fcntl.h>
+#include <elf.h>
 
 /* Function prototypes */
 ssize_t read_textfile(const char *filename, size_t letters);
@@ -20,5 +21,7 @@ void write_error(int fd, const char *filename);
 void close_error(int fd);
 void print_error(const char *message, const char *file);
 void copy_file(const char *file_from, const char *file_to);
+
+
 
 #endif /* MAIN_H */
